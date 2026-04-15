@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    width: 700px;
+    height: 700px;
+    flex-wrap: wrap;
+}
+
+.grid-square {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    width: 6.25%;
+    height: 6.25%;
+}
+
+/* .grid-square:active {
+    background-color: black;
+} */
+
