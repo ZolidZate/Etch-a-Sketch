@@ -12,12 +12,18 @@ body {
     flex-wrap: wrap;
 }
 
-.grid-square {
+.square {
     box-sizing: border-box;
     border: 1px solid #ccc;
     width: 6.25%;
     height: 6.25%;
 }
+
+.square {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 
 /* .grid-square:active {
     background-color: black;
