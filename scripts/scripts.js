@@ -7,7 +7,17 @@ const rainbowButton = document.getElementById('rainbow');
 const colorButton = document.getElementById('color');
 const colorPicker = document.getElementById('colorPicker');
 const eraserButton = document.getElementById('eraser');
+const modal = document.getElementById("popUp");
+const howTo = document.getElementById("howTo");
+const span = document.getElementsByClassName("close")[0];
 let userChoice = 'black'; // Default drawing color
+
+// Instructional How-to popup
+howTo.onclick = () => modal.style.display = "block";
+span.onclick = () => modal.style.display = "none";
+window.onClick = (event) => {
+    if (event.target == modal) modal.style.display = "none";
+}
 
 // Rainbow button: Sets user choice to a special value to indicate rainbow mode
 rainbowButton.addEventListener('click', () => {

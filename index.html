@@ -6,22 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch - The Odin Project</title>
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <script src="scripts/scripts.js" defer></script>
 </head>
 
 <body>
 
+    <header><H1>Etch a Sketch</H1></header>
+    
     <div class="action-Bar">
         <button id="size">Size</button>
         <button id="reset">Reset</button>
         <button id="color">Color</button>
-        <input type="color" id="colorPicker" style="display:none;">   
+        <input type="color" id="colorPicker" style="display:none;">
         <button id="rainbow">Rainbow</button>
         <button id="eraser">Eraser</button>
+        <button id="howTo">How to use</button>
     </div>
 
     <div id="container">
 
+    </div>
+
+    <div id="popUp" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="styled-header">How to use</h2>
+            <p>- The standard size of the board is 16 x 16, if you would like to choose a different size, click on Size then select a value from 2 to 100 and the drawing
+                board will automatically adjust to the size. (ie. if you choose 50 the board will become 50 x 50).
+            </p>
+            
+            <p>- To draw on the board simply hold the left mouse button down while dragging the mouse pointer over the boxes that you would like to color in.</p>
+            
+            <p>- You have 2 options as far as how you would like to draw. You can select the color you want by pressing the color button. The color button will change to the 
+                color that you currently have selected, or you can choose rainbow which will give you a random color for every box.
+            </p>
+        </div>
     </div>
 
 </body>

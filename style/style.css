@@ -1,10 +1,57 @@
 body {
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
-    gap: 50px;
+    gap: 30px;
     margin-top: 50px;
+    background-color: #393939;
+}
+
+h1 {
+    color: #ec7f37;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+button {
+    background-color: #FF5A09;
+    padding: 10px;
+    font-family: 'Orbitron',sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.modal {
+    background-color: #393939;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 400; top: 0;
+    width: 30%; height: 20%;
+    color: #FFFFFF;
+}
+
+.modal-content {
+    background-color: #FF5A09;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 #container {
